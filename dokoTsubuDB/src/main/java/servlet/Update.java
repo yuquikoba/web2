@@ -43,7 +43,6 @@ public class Update extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
 		String id=request.getParameter("id");
 		String text=request.getParameter("text");
 		Mutter mutter=new Mutter(Integer.parseInt(id),text);
